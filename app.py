@@ -50,7 +50,7 @@ st.set_page_config(
 )
 
 st.title("Meal Plan Builder")
-st.write("This app uses OpenAI's GPT-4 model to generate recipes based on the ingredients in the image you upload.")
+st.write("Provide your information to generate a personalized meal plan.")
 with st.form(key="user_input", clear_on_submit=False):
     st.write("Generating meal plan...")
     gender = st.text_input("What's your gender?")
