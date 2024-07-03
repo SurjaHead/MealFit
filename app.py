@@ -49,7 +49,7 @@ st.set_page_config(
     page_icon="🍳",
 )
 
-st.title("Meal Plan Builder")
+st.title("MealFit - Personalized Meal Plan Builder")
 st.write("Provide your information to generate a personalized meal plan.")
 with st.form(key="user_input", clear_on_submit=False):
     st.write("Generating meal plan...")
