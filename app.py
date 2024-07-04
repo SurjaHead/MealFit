@@ -52,7 +52,6 @@ st.set_page_config(
 st.title("MealFit - Personalized Meal Plan Builder")
 st.write("Provide your information to generate a personalized meal plan.")
 with st.form(key="user_input", clear_on_submit=False):
-    st.write("Generating meal plan...")
     gender = st.text_input("What's your gender?")
     age = st.text_input("What's your age?")
     weight = st.text_input("What's your weight in kgs?")
