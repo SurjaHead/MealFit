@@ -6,7 +6,7 @@ import streamlit as st
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
-def generate_meal_plan(age, weight, height, goal, activity_level):
+def generate_meal_plan(age, weight, height, goal, activity_level, cuisine):
     headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {api_key}"
