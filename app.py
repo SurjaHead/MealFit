@@ -28,7 +28,7 @@ def generate_meal_plan(age, weight, height, goal, activity_level):
             "content": [
                 {
                     "type": "text",
-                    "text": f"Gneder: {gender}\nAge: {age}\nWeight: {weight} kgs\nHeight: {height}cm\nGoal: {goal}\nActivity level:{activity_level}"
+                    "text": f"Gneder: {gender}\nAge: {age}\nWeight: {weight} kgs\nHeight: {height}cm\nGoal: {goal}\nActivity level:{activity_level}\nPreferred Cuisine: {cuisine}"
                 }
             ]
         }
@@ -62,7 +62,7 @@ with st.form(key="user_input", clear_on_submit=False):
     cuisine = st.text_input("What's your preferred cuisine? (optional)")
     submit = st.form_submit_button("Generate Meal Plan")
 if submit:
-    generate_meal_plan(age, weight, height, goal, activity_level)
+    generate_meal_plan(age, weight, height, goal, activity_level, cuisine)
 # OpenAI API Key
 
 
