@@ -63,7 +63,7 @@ with st.form(key="user_input", clear_on_submit=False):
     goal = st.text_input("What's your current fitness goal?")
     activity_level = st.text_input("What's your activity level? (sedentary, lightly active, somewhat active, highly active, athlete)")
     cuisine = st.text_input("What's your preferred cuisine? (optional)")
-    restrictions = st.text_input("Any dietary restrictions?")
+    restrictions = st.text_input("Any dietary restrictions? (optional)")
     submit = st.form_submit_button("Generate Meal Plan")
 if submit:
     generate_meal_plan(gender, age, weight, height, goal, activity_level, cuisine, restrictions)
